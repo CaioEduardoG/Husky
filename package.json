@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint src/*.js --fix"
+    "lint": "./node_modules/.bin/eslint src/*.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,11 +13,12 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-import": "^2.20.1"
+    "eslint-plugin-import": "^2.20.1",
+    "husky": "^4.2.1"
   },
   "husky": {
     "hooks": {
-      "pre-push": "/node_modules/.bin/eslint src/*.js"
+      "pre-push": "npm run lint"
     }
   }
 }
