@@ -5,7 +5,7 @@
         "node": true
     },
     "extends": [
-        "airbnb-base"
+        "google"
     ],
     "globals": {
         "Atomics": "readonly",
