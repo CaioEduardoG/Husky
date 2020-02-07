@@ -5,6 +5,7 @@ if (sonar-scanner   -Dsonar.projectKey=pre-push-analise   -Dsonar.sources=.   -D
 then
 else
   return -1
+fi
 
 cd node_modules/.bin/
 #eslint src/*.js
