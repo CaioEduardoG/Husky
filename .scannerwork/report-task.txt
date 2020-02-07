@@ -2,5 +2,5 @@ projectKey=pre-push-analise
 serverUrl=http://localhost:9000
 serverVersion=7.9.2.30863
 dashboardUrl=http://localhost:9000/dashboard?id=pre-push-analise
-ceTaskId=AXAhVfVtc1DAdkkqFe0u
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXAhVfVtc1DAdkkqFe0u
+ceTaskId=AXAhVwdPc1DAdkkqFe0v
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXAhVwdPc1DAdkkqFe0v
