@@ -16,13 +16,13 @@
     "husky": "^4.2.1"
   },
   "husky": {
-      "hooks": {
-        "pre-push": "tests-stage"
-      }
-    },
-    "tests-stage": {
-      "./src/*.js": [
-        "/node_modules/.bin/eslint"
-      ]
+    "hooks": {
+      "pre-push": "tests-stage"
     }
+  },
+  "tests-stage": {
+    "./src/*.js": [
+      "./node_modules/.bin/eslint ./src/*.js"
+    ]
+  }
 }
