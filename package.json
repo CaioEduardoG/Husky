@@ -17,12 +17,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "tests-stage"
+      "pre-push": "npm run lint"
     }
-  },
-  "tests-stage": {
-    "./src/*.js": [
-      "./node_modules/.bin/eslint ./src/*.js"
-    ]
   }
 }
