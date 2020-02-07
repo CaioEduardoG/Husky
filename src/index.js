@@ -5,4 +5,4 @@ function soma(a, b) {
   return a + b;
 }
 
-soma(numberA, numberB);
+soma(numberA, numberB)
