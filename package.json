@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint src/*.js",
-    "sonar": "./sonar-test/test.sh"
+    "qa": "./tests/qualityassurance.sh"
   },
   "author": "",
   "license": "ISC",
@@ -18,7 +17,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run lint && npm run sonar"
+      "pre-push": "npm run qa"
     }
   }
 }
