@@ -1,13 +1,8 @@
 #!/bin/bash
 cd /home/caio/Documentos/Projetos/POC_Husky_Hooks
 
-if (sonar-scanner   -Dsonar.projectKey=pre-push-analise   -Dsonar.sources=.   -Dsonar.host.url=http://localhost:9000   -Dsonar.login=b5c24475ed4e2674991272ad7055ea3a2df512c9 -Dsonar.issuesReport.html.enable=true); 
-then
-  echo 'sucess'
-else
-  return -1
-fi
+sonar-scanner   -Dsonar.projectKey=pre-push-analise   -Dsonar.sources=.   -Dsonar.host.url=http://localhost:9000   -Dsonar.login=b5c24475ed4e2674991272ad7055ea3a2df512c9 -Dsonar.issuesReport.html.enable=true
 
 cd node_modules/.bin/
-#eslint src/*.js
+eslint src/*.js
 
