@@ -23,8 +23,7 @@
   },
   "lint-staged": {
     "./src/*.js": [
-      "node_modules/.bin/eslint src/*.js",
-      "echo 'hello'"
+      "eslint src/*.js"
     ]
   }
 }
