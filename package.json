@@ -17,7 +17,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "./tests/qualityassurance.sh"
+      "pre-push": "npm run qa"
     }
   }
 }
